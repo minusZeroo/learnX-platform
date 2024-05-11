@@ -1,8 +1,9 @@
 package com.example.learnxplatform.entity;
 
 import com.example.learnxplatform.enums.UserRole;
-import jakarta.persistence.*;
 
+
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity

@@ -1,7 +1,6 @@
 package com.example.learnxplatform.entity;
 
-import jakarta.persistence.*;
-
+import javax.persistence.*;
 import java.io.Serializable;
 import java.time.DayOfWeek;
 import java.time.LocalTime;
