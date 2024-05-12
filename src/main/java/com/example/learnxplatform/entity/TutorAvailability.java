@@ -13,7 +13,6 @@ public class TutorAvailability  implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
     @ManyToOne
     @JoinColumn(name = "tutor_id")
     private User tutor;
