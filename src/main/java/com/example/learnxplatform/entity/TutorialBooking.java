@@ -2,7 +2,6 @@ package com.example.learnxplatform.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.nio.file.Watchable;
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 

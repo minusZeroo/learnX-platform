@@ -26,6 +26,7 @@ public class TutorialBookingService {
         tutorialBooking.setDayOfWeek(request.getDayOfWeek());
         tutorialBooking.setStartTime(request.getStartTime());
         tutorialBooking.setEndTime(request.getEndTime());
+
         return tutorialBookingRepository.save(tutorialBooking);
     }
 

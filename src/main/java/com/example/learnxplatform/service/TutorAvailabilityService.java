@@ -26,6 +26,7 @@ public class TutorAvailabilityService {
         tutorAvailability.setStartTime(request.getStartTime());
         tutorAvailability.setEndTime(request.getEndTime());
         tutorAvailability.setSubject(request.getSubject());
+
         return tutorAvailabilityRepository.save(tutorAvailability);
     }
 
