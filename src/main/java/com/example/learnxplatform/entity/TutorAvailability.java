@@ -25,9 +25,13 @@ public class TutorAvailability  implements Serializable {
 
     private String subject;
 
-    public TutorAvailability() {}
+    public TutorAvailability() {
+        super();
+    }
 
-    public TutorAvailability(Long id, User tutor, DayOfWeek dayOfWeek, LocalTime startTime, LocalTime endTime, String subject) {
+    public TutorAvailability(Long id, User tutor, DayOfWeek dayOfWeek, LocalTime startTime, LocalTime endTime,
+                             String subject) {
+        super();
         this.id = id;
         this.tutor = tutor;
         this.dayOfWeek = dayOfWeek;

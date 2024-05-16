@@ -2,9 +2,11 @@ package com.example.learnxplatform.repository;
 
 import com.example.learnxplatform.entity.TutorAvailability;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface TutorAvailabilityRepository extends JpaRepository<TutorAvailability, Long> {
 
     // Find tutor availabilities by tutor ID

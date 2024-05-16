@@ -15,7 +15,7 @@ public class User implements Serializable {
     private Long id;
 
     @Column(unique = true)
-    private String studentNumber;
+    private String username;
 
     private String password;
 
@@ -23,11 +23,13 @@ public class User implements Serializable {
     private UserRole role;
 
     public User() {
+        super();
     }
 
-    public User(Long id, String studentNumber, String password, UserRole role) {
+    public User(Long id, String username, String password, UserRole role) {
+        super();
         this.id = id;
-        this.studentNumber = studentNumber;
+        this.username = username;
         this.password = password;
         this.role = role;
     }
@@ -40,12 +42,12 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getStudentNumber() {
-        return studentNumber;
+    public String getUsername() {
+        return username;
     }
 
-    public void setStudentNumber(String studentNumber) {
-        this.studentNumber = studentNumber;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {

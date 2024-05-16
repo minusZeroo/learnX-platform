@@ -11,13 +11,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/tutorial-requests")
-@CrossOrigin(origins = "http://localhost:3000")
+@RequestMapping("/api/tutorial-requests") // Base URL for this controller
+@CrossOrigin(origins = "http://localhost:3000") // Allowing cross-origin requests from localhost:3000
 public class TutorialRequestController {
 
     @Autowired
-    private TutorialRequestService tutorialRequestService;
+    private TutorialRequestService tutorialRequestService; // Autowiring the service class
 
+    // Endpoint to create a new tutorial request
     @PostMapping
     public ResponseEntity<TutorialRequest> createTutorialRequest(@RequestBody TutorialRequestRequest request) {
         TutorialRequest createdRequest = tutorialRequestService.createTutorialRequest(request);

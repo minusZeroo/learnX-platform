@@ -19,10 +19,12 @@ public class TutorialRequestService {
     @Autowired
     private UserRepository userRepository;
 
+    // Get tutorial requests for a tutor
     public List<TutorialRequest> getTutorialRequestsForTutor(Long tutorId) {
         return tutorialRequestRepository.findByTutorId(tutorId);
     }
 
+    // Respond to a tutorial request
     public void respondToTutorialRequest(Long requestId, String response) {
         TutorialRequest tutorialRequest = tutorialRequestRepository.getTutorialRequestById(requestId);
         // Update tutorial request status based on response
@@ -75,6 +77,8 @@ public class TutorialRequestService {
 
         return newTutorialRequest;
     }
+
+    // Implement other CRUD operations if needed
 
 
 }

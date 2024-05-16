@@ -32,9 +32,12 @@ public class TutorialRequest implements Serializable {
     private String status;
 
     public TutorialRequest() {
+        super();
     }
 
-    public TutorialRequest(Long id, User tutor, User student, String subject, DayOfWeek dayOfWeek, LocalTime startTime, LocalTime endTime, String status) {
+    public TutorialRequest(Long id, User tutor, User student, String subject, DayOfWeek dayOfWeek, LocalTime startTime,
+                           LocalTime endTime, String status) {
+        super();
         this.id = id;
         this.tutor = tutor;
         this.student = student;
@@ -44,6 +47,7 @@ public class TutorialRequest implements Serializable {
         this.endTime = endTime;
         this.status = status;
     }
+
 
     public Long getId() {
         return id;
@@ -59,6 +63,14 @@ public class TutorialRequest implements Serializable {
 
     public void setTutor(User tutor) {
         this.tutor = tutor;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public User getStudent() {
@@ -99,13 +111,5 @@ public class TutorialRequest implements Serializable {
 
     public void setEndTime(LocalTime endTime) {
         this.endTime = endTime;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
     }
 }

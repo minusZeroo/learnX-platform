@@ -21,7 +21,6 @@ public class TutorialBooking implements Serializable {
     @JoinColumn(name = "tutor_id")
     private User tutor;
 
-
     private String subject;
 
     private DayOfWeek dayOfWeek;
@@ -30,9 +29,13 @@ public class TutorialBooking implements Serializable {
 
     private LocalTime endTime;
 
-    public TutorialBooking() { }
+    public TutorialBooking() {
+        super();
+    }
 
-    public TutorialBooking(Long id, User student, User tutor, String subject, DayOfWeek dayOfWeek, LocalTime startTime, LocalTime endTime) {
+    public TutorialBooking(Long id, User student, User tutor, String subject, DayOfWeek dayOfWeek, LocalTime startTime,
+                           LocalTime endTime) {
+        super();
         this.id = id;
         this.student = student;
         this.tutor = tutor;

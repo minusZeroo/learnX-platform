@@ -2,21 +2,18 @@ package com.example.learnxplatform.dto;
 
 public class LoginRequest {
 
-    private String studentNumber;
+    private String username;
     private String password;
 
-    public String getStudentNumber() {
-        return studentNumber;
+    public String getUsername() {
+        return username;
     }
-
-    public void setStudentNumber(String studentNumber) {
-        this.studentNumber = studentNumber;
+    public void setUsername(String username) {
+        this.username = username;
     }
-
     public String getPassword() {
         return password;
     }
-
     public void setPassword(String password) {
         this.password = password;
     }

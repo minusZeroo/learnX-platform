@@ -18,7 +18,9 @@ public class TutorialBookingService {
     @Autowired
     private UserRepository userRepository;
 
+    // Book a tutorial
     public TutorialBooking bookTutorial(TutorialBookingRequest request) {
+        // Validate request and handle booking
         TutorialBooking tutorialBooking = new TutorialBooking();
         tutorialBooking.setStudent(userRepository.getUserById(request.getStudentId()));
         tutorialBooking.setTutor(userRepository.getUserById(request.getTutorId()));
@@ -26,7 +28,6 @@ public class TutorialBookingService {
         tutorialBooking.setDayOfWeek(request.getDayOfWeek());
         tutorialBooking.setStartTime(request.getStartTime());
         tutorialBooking.setEndTime(request.getEndTime());
-
         return tutorialBookingRepository.save(tutorialBooking);
     }
 
@@ -54,4 +55,6 @@ public class TutorialBookingService {
     public void deleteTutorialBooking(Long id) {
         tutorialBookingRepository.deleteById(id);
     }
+
+    // Implement other CRUD operations if needed
 }
