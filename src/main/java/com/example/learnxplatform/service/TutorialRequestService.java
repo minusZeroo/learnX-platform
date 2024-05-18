@@ -62,13 +62,6 @@ public class TutorialRequestService {
         return tutorialRequestRepository.findByStatus(status);
     }
 
-//    // Get tutorial requests by status
-//    public List<TutorialRequest> getTutorialRequestsByStatus(String status){
-//        return tutorialRequestRepository.findByStatus(status);
-//
-//
-//    }
-
     // Create a new tutorial request
     public TutorialRequest createTutorialRequest(TutorialRequestRequest request) {
 
