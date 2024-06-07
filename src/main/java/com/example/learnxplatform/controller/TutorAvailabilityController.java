@@ -18,7 +18,6 @@ public class TutorAvailabilityController {
     @Autowired
     private TutorAvailabilityService tutorAvailabilityService; // Autowiring the service class
 
-
     // Endpoint to get all tutor availabilities
     @GetMapping
     public ResponseEntity<List<TutorAvailability>> getAllTutorAvailabilities() {

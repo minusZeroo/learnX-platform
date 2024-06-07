@@ -77,8 +77,6 @@ public class TutorialRequestService {
 
         return newTutorialRequest;
     }
-
-    // Implement other CRUD operations if needed
-
+        // Implement other CRUD operations if needed
 
 }
